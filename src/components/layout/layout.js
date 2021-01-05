@@ -1,10 +1,12 @@
 import React from "react"
 import "./layout.css"
+import {GlobalStyle} from "../styles/GlobalStyle"
 
 function Layout({ children }) {
   return (
     <>
-      <main>{children}</main>
+        <GlobalStyle/>
+        <main>{children}</main>
     </>
   )
 }
